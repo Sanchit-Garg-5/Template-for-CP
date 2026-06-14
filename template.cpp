@@ -5,7 +5,12 @@ typedef long long ll;
 #define f first
 #define s second
 // --- Master Debugger Block ---
+// Debug Overloads
+#ifdef SanG_05
 #define debug(x) _print(x); cerr << endl;
+#else
+#define debug(x)
+#endif
 void _print(ll t) {cerr << t;}
 void _print(int t) {cerr << t;}
 void _print(string t) {cerr << t;}
