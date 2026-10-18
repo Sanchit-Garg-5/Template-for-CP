@@ -45,11 +45,14 @@ template <class... Args> void _print(forward_list <Args...> v) {cerr << "[ "; fo
 template <class... Args> void _print(stack <Args...> v) {cerr << "[ "; while (!v.empty()) {_print(v.top()); cerr << " "; v.pop();} cerr << "]";}
 template <class... Args> void _print(queue <Args...> v) {cerr << "[ "; while (!v.empty()) {_print(v.front()); cerr << " "; v.pop();} cerr << "]";}
 template <class... Args> void _print(priority_queue <Args...> v) {cerr << "[ "; while (!v.empty()) {_print(v.top()); cerr << " "; v.pop();} cerr << "]";}
-
+void solve(){
+    ll n; cin>>n;
+    return;
+}
 int main(){
     cin.tie(nullptr); cout.tie(nullptr); ios::sync_with_stdio(false);
-    vector<long long int>me;
-    me.push_back(2);
-    me.push_back(6);
-    debug(me);
+    ll t; cin>>t;
+    while(t--){
+        solve();
+    }
 }
