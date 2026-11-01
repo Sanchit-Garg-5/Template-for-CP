@@ -46,8 +46,9 @@ template <class... Args> void _print(stack <Args...> v) {cerr << "[ "; while (!v
 template <class... Args> void _print(queue <Args...> v) {cerr << "[ "; while (!v.empty()) {_print(v.front()); cerr << " "; v.pop();} cerr << "]";}
 template <class... Args> void _print(priority_queue <Args...> v) {cerr << "[ "; while (!v.empty()) {_print(v.top()); cerr << " "; v.pop();} cerr << "]";}
 void solve(){
-    ll n; cin>>n;
-    return;
+    ll n,k; cin>>n>>k;
+    vector<ll>me(n,0); 
+    for(int i=0;i<n;i++){cin>>me[i];}
 }
 int main(){
     cin.tie(nullptr); cout.tie(nullptr); ios::sync_with_stdio(false);
